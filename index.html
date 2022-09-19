@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego del Ahorcado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="contenedor-principal">      
+      <div class="instrucciones">
+        <h1 class="titulo">Juego del Ahorcado</h1>
+      </div>
+      
+      <div id="botones-input" style="text-align:center">
+        <button class="btn" id="iniciar-juego">♠ PLAY ♠</button>
+        <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Ingresa palabras nuevas al juego">
+        <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button>        
+      </div>
+    </div>
+
+    <div id="contenedor-canvas" style="text-align:center">
+      <canvas id="canvas" height="500px" width="800px"></canvas>
+      <div>
+        <label for="input-oculto">
+          <input id="input-oculto" class="input-oculto" max-length="1" name="input-oculto" type="text">
+        </label>
+      </div>
+    </div>
+
+    <div id="botones" style="text-align:center">
+      <button id="btn-reiniciar" class="btn">✪ Nuevo Juego</button>
+      <button id="btn-inicio" class="btn">Volver al inicio ۩</button>
+    </div>
+
+    <footer class="footer">
+      <p>by Enrique Erazo - ©2022</p>
+    </footer>
+    
+    <script type="text/javascript" src="js/palabras.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/ahorcado.js"></script>
+  </body>
+</html>

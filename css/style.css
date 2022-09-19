@@ -1,0 +1,140 @@
+:root {
+    --color01: #ffffff;
+    --color02: #e0ecfd;
+    --color03: #e8f1ff;
+    --color04: #032352;
+    --color05: #00626d;
+    --color06: #0097a7; 
+    --color07: #055160; 
+    
+    --fuente: 'Cabin', Arial;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 1;
+    padding: 1;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: linear-gradient(to right, var(--color02), var(--color03));
+    font-family: var(--fuente);
+  }
+  
+  .titulo {
+    color: var(--color04);
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .btn {
+    border: 0;
+    color: var(--color01);
+    font-weight: bold;
+    background-color: var(--color05);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 0.5rem;  
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: var(--color06);
+  }
+  
+  .btn:disabled {
+    background-color: var(--color01);
+    cursor:not-allowed;
+  }
+  
+  #nueva-palabra {
+    margin-top: 1rem;
+  }
+  
+  .btn:last-child {
+    margin-right: 0;
+  }
+  
+  #btn-reiniciar, #btn-inicio {
+    margin-top: 1rem; 
+  }
+  
+  .text-input {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(71, 71, 71, 0.2);
+    display: block;
+    padding: 0.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #canvas {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid var(--color05);
+    text-align: center;
+  }
+  
+  .input-oculto {
+    display: block;
+    width: 0;
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  .mensaje-exito {
+    background-color: var(--color07);    
+    padding: 1rem;    
+    font-size: 1.3rem;    
+    margin: 1rem auto 0;
+    color: var(--color1);   
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;    
+    border-radius: 0.5rem;
+    width: 20%;
+  }
+  
+  .mensaje-error {
+    background-color: var(--color07);    
+    padding: 1rem;    
+    font-size: 1.3rem;    
+    margin: 1rem auto 0;
+    color: var(--color1);   
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;    
+    border-radius: 0.5rem;
+    width: 20%;
+  }
+  
+  .footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--color05);
+  }
+
+  @media (min-width: 576px) {
+    .text-input {
+      width: 30%;
+    }
+  }
